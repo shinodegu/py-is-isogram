@@ -6,7 +6,7 @@ class TestIsogram:
         "word, result",
         [
             pytest.param(
-                "pineapple",
+                "look",
                 False,
                 id="test with non isogram"
             ),
@@ -16,12 +16,12 @@ class TestIsogram:
                 id="test with isogram"
             ),
             pytest.param(
-                "HuGe",
-                True,
-                id="test with uppercase"
+                "Adam",
+                False,
+                id="test with same letter and uppercase"
             ),
             pytest.param(
-                " ",
+                "",
                 True,
                 id="test with empty str"
             )
